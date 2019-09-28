@@ -1,11 +1,10 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {SecondService} from '../second.service';
 
 @Component({
   selector: 'app-second',
-  templateUrl: './second.component.html',
-  styleUrls: ['./second.component.css']
+  templateUrl: './second.component.html'
 })
 export class SecondComponent implements OnInit {
 

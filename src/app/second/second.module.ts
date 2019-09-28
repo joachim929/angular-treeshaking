@@ -4,8 +4,8 @@ import {CommonModule} from '@angular/common';
 import {SecondRoutingModule} from './second-routing.module';
 import {SecondComponent} from './second/second.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { AnotherComponent } from './another/another.component';
-import { LandingComponent } from './landing.component';
+import {AnotherComponent} from './another/another.component';
+import {LandingComponent} from './landing.component';
 import {SecondServiceModule} from './second-service.module';
 
 @NgModule({
@@ -16,9 +16,9 @@ import {SecondServiceModule} from './second-service.module';
     SecondServiceModule
   ],
   declarations: [
-    SecondComponent,
     AnotherComponent,
-    LandingComponent
+    LandingComponent,
+    SecondComponent
   ]
 })
 export class SecondModule {

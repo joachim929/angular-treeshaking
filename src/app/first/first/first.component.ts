@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {SecondService} from '../../second/second.service';
 
 @Component({
   selector: 'app-first',
-  templateUrl: './first.component.html',
-  styleUrls: ['./first.component.css']
+  templateUrl: './first.component.html'
 })
 export class FirstComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private secondService: SecondService
+  ) {
+    console.warn(this.secondService.value);
+  }
 
   ngOnInit() {
   }
-
 }

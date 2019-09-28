@@ -4,8 +4,7 @@ import {SecondService} from '../second.service';
 
 @Component({
   selector: 'app-another',
-  templateUrl: './another.component.html',
-  styleUrls: ['./another.component.css']
+  templateUrl: './another.component.html'
 })
 export class AnotherComponent implements OnInit {
 
