@@ -11,6 +11,7 @@ export class FirstComponent implements OnInit {
     private secondService: SecondService
   ) {
     console.warn(this.secondService.value);
+    console.log('Can still access the secondService even though I am in a different module');
   }
 
   ngOnInit() {

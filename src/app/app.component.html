@@ -1,7 +1,11 @@
 <nav>
   <ul>
-    <li><a routerLink="/first" routerLinkActive="active">First Module</a></li>
-    <li><a routerLink="/landing" routerLinkActive="active">Second Module</a></li>
+    <li><a routerLink="first" routerLinkActive="active">First Module</a></li>
+    <li><ul>
+      <li><a routerLink="first" routerLinkActive="active">Child</a></li>
+      <li><a routerLink="first/another-child" routerLinkActive="active">Another child</a></li>
+    </ul></li>
+    <li><a routerLink="landing" routerLinkActive="active">Second Module</a></li>
   </ul>
 </nav>
 

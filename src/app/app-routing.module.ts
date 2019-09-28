@@ -3,7 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/first', pathMatch: 'full'},
+  {path: '', redirectTo: 'first', pathMatch: 'full'},
   {
     path: 'first',
     loadChildren: './first/first.module#FirstModule',

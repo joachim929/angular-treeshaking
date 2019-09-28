@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { FirstRoutingModule } from './first-routing.module';
 import {FirstComponent} from './first/first.component';
+import { ChildComponent } from './child/child.component';
+import { AnotherChildComponent } from './another-child/another-child.component';
 
 
 @NgModule({
@@ -12,6 +14,8 @@ import {FirstComponent} from './first/first.component';
   ],
   declarations: [
     FirstComponent,
+    ChildComponent,
+    AnotherChildComponent,
   ]
 })
 export class FirstModule { }
