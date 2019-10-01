@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { FirstRoutingModule } from './first-routing.module';
+import {FirstRoutingModule} from './first-routing.module';
 import {FirstComponent} from './first/first.component';
-import { ChildComponent } from './child/child.component';
-import { AnotherChildComponent } from './another-child/another-child.component';
+import {ChildComponent} from './child/child.component';
+import {AnotherChildComponent} from './another-child/another-child.component';
 
 
 @NgModule({
@@ -18,4 +18,5 @@ import { AnotherChildComponent } from './another-child/another-child.component';
     AnotherChildComponent,
   ]
 })
-export class FirstModule { }
+export class FirstModule {
+}

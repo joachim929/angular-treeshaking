@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: '', component: FirstComponent, children: [
       {path: 'child', component: ChildComponent},
-      {path: 'another-child', component: AnotherChildComponent}
+      {path: 'another-yet-another-child', component: AnotherChildComponent}
     ]
   }
 ];

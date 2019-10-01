@@ -9,16 +9,16 @@ import {LandingComponent} from './landing.component';
 import {SecondServiceModule} from './second-service.module';
 
 @NgModule({
+  declarations: [
+    AnotherComponent,
+    LandingComponent,
+    SecondComponent
+  ],
   imports: [
     CommonModule,
     SecondRoutingModule,
     ReactiveFormsModule,
     SecondServiceModule
-  ],
-  declarations: [
-    AnotherComponent,
-    LandingComponent,
-    SecondComponent
   ]
 })
 export class SecondModule {
