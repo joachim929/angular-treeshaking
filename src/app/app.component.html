@@ -1,12 +1,21 @@
 <nav>
   <ul>
     <li><a routerLink="first" routerLinkActive="active">First Module</a></li>
-    <li><ul>
-      <li><a routerLink="first" routerLinkActive="active">Child</a></li>
-      <li><a routerLink="first/another-child" routerLinkActive="active">Another child</a></li>
-    </ul></li>
+    <li>
+      <ul>
+        <li><a routerLink="first" routerLinkActive="active">Child</a></li>
+        <li><a routerLink="first/another-child" routerLinkActive="active">Another child</a></li>
+      </ul>
+    </li>
     <li><a routerLink="landing" routerLinkActive="active">Second Module</a></li>
+    <li><a routerLink="third" routerLinkActive="active">Third Module</a></li>
+    <li>
+      <ul>
+        <li><a routerLink="third/yet-another-child" routerLinkActive="active">Yet another child</a></li>
+        <li><a routerLink="third/sibling" routerLinkActive="active">Sibling</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
-
+<hr>
 <router-outlet></router-outlet>

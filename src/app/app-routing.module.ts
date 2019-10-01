@@ -14,6 +14,11 @@ const routes: Routes = [
     loadChildren: './second/second.module#SecondModule',
     data: {preload: false}
   },
+  {
+    path: 'third',
+    loadChildren: './third/third.module#ThirdModule',
+    data: {preload: true}
+  },
   {path: '**', redirectTo: '/first'}
 ];
 
