@@ -7,6 +7,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {AnotherComponent} from './another/another.component';
 import {LandingComponent} from './landing.component';
 import {SecondServiceModule} from './second-service.module';
+import {ThirdService} from '../third/third.service';
 
 @NgModule({
   declarations: [

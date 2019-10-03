@@ -6,6 +6,8 @@ import {ThirdComponent} from './third.component';
 import {ThirdRoutingModule} from './third-routing.module';
 import {YetAnotherChildComponent} from './yet-another-child/yet-another-child.component';
 import {SiblingComponent} from './sibling/sibling.component';
+import {ThirdServiceModule} from './third-service.module';
+import {ThirdService} from './third.service';
 
 
 @NgModule({
@@ -17,7 +19,11 @@ import {SiblingComponent} from './sibling/sibling.component';
   imports: [
     CommonModule,
     ThirdRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ThirdServiceModule
+  ],
+  providers: [
+    ThirdService
   ]
 })
 export class ThirdModule {

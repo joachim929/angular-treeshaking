@@ -1,23 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
-import {ThirdComponent} from '../third.component';
+import {ThirdService} from '../third.service';
 
 @Component({
   selector: 'app-sibling',
   templateUrl: './sibling.component.html'
 })
-export class SiblingComponent extends ThirdComponent implements OnInit {
-  childFormControl: FormControl;
+export class SiblingComponent implements OnInit {
+  thirdServiceStringValue: string;
+  stringForControl: FormControl;
 
   constructor(
+    private thirdService: ThirdService
   ) {
-    super();
+    this.thirdServiceStringValue = this.thirdService.someString;
+  }
+
+  get someString(): string {
+    return this.thirdService.someString;
+  }
+
+  set someString(value: string) {
+    this.thirdService.someString = value;
   }
 
   ngOnInit() {
-    this.childFormControl = new FormControl(this.parentValue);
-    this.childFormControl.valueChanges.subscribe((nextValue) => {
-      this.parentValue = nextValue;
+    this.stringForControl = new FormControl(this.someString);
+    this.stringForControl.valueChanges.subscribe((nextValue) => {
+      this.someString = nextValue;
     });
   }
 }
